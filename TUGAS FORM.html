@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+</head>
+<body style="background: url('https://i.pinimg.com/736x/bb/a1/5e/bba15e75abf3e69bad128a0ea62ffcc8.jpg') no-repeat center center fixed; background-size: cover; text-align: center;">
+    <h2>Form Pendaftaran</h2>
+    <img src="https://i.pinimg.com/736x/bb/a1/5e/bba15e75abf3e69bad128a0ea62ffcc8.jpg" alt="Logo" width="100">
+    
+    <div style="display: inline-block; text-align: left; background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px;">
+        <form>
+            <fieldset>
+                <legend>Informasi Pribadi</legend>
+                <label for="nama">Nama:</label><br>
+                <input type="text" id="nama" name="nama" required><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="gender">Jenis Kelamin:</label><br>
+                <select id="gender" name="gender">
+                    <optgroup label="Pilih Jenis Kelamin">
+                        <option value="laki-laki">Laki-laki</option>
+                        <option value="perempuan">Perempuan</option>
+                    </optgroup>
+                </select><br>
+                
+                <label for="hobi">Hobi:</label><br>
+                <input list="hobi-list" id="hobi" name="hobi">
+                <datalist id="hobi-list">
+                    <option value="Membaca">
+                    <option value="Menulis">
+                    <option value="Olahraga">
+                </datalist><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Informasi Tambahan</legend>
+                <label for="umur">Umur:</label><br>
+                <input type="number" id="umur" name="umur"><br>
+                
+                <label for="komentar">Komentar:</label><br>
+                <textarea id="komentar" name="komentar"></textarea><br>
+                
+
+            </fieldset>
+            
+            <button type="submit">Daftar</button>
+        </form>
+    </div>
+</body>
+</html>
